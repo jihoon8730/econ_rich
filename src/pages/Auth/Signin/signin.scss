@@ -1,0 +1,41 @@
+.email-input {
+  width: 90%;
+  height: 40px;
+  padding: 0px 10px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  outline-style: none;
+  transition: all 0.5s;
+
+  &:focus {
+    border: 1px solid #111111;
+  }
+}
+
+.password-input {
+  width: 90%;
+  height: 40px;
+  padding: 0px 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  outline-style: none;
+  transition: all 0.5s;
+
+  &:focus {
+    border: 1px solid #111111;
+  }
+}
+
+.login-btn {
+  width: 96%;
+  height: 40px;
+  margin-top: 20px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #111111;
+  color: #eeeeee;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}

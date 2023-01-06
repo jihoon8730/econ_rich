@@ -1,3 +1,10 @@
 .Nav {
+  display: flex;
+  gap: 80px;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  margin: 0px auto;
+  width: 380px;
   text-align: center;
 }
