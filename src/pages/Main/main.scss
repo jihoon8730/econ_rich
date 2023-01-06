@@ -1,0 +1,33 @@
+.Main {
+  margin: 0px auto;
+  width: 400px;
+  height: 800px;
+  
+  .slick-container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .menus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+    .menu {
+      width: 60px;
+      height: 60px;
+      background-color: #e7e7e7;
+      font-size: 25px;
+      font-weight: 700;
+      border: 0px;
+      border-radius: 10px;
+    }
+
+  }
+}
