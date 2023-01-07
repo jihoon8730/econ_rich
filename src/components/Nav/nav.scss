@@ -1,10 +1,22 @@
 .Nav {
   display: flex;
-  gap: 80px;
-  justify-content: start;
+  gap: 30px;
+  justify-content: center;
   align-items: center;
   padding-left: 10px;
   margin: 0px auto;
   width: 380px;
   text-align: center;
+
+  .Nav-home {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .logout {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+  }
 }

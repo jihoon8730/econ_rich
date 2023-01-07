@@ -1,8 +1,8 @@
 .Boarddetail {
   margin: 0 auto;
-  width: 390px;
+  width: 90%;
+  width: 370px;
   height: 500px;
-  
 
   .board-title {
     margin-top: 30px;
@@ -25,5 +25,49 @@
     background-color: #111111;
     color: #eeeeee;
     text-align: center;
+    cursor: pointer;
+  }
+
+  .title-input {
+    width: 360px;
+    height: 30px;
+    margin-top: 20px;
+    border: 0px;
+    border-bottom: 1px solid rgb(190, 189, 189);
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    outline-style: none;
+  }
+
+  .contents-area {
+    width: 360px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    outline-style: none;
+    resize: none;
+  }
+
+  .update {
+    width: 100px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #111111;
+    color: #eeeeee;
+    cursor: pointer;
+  }
+
+  .delete {
+    width: 100px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #111111;
+    color: #eeeeee;
+    cursor: pointer;
   }
 }
