@@ -9,7 +9,7 @@ const Auth = () => {
   const [isLoginToggle, setIsLoginToggle] = useState(false);
   return (
     <div className="Auth">
-      <h3>로그인</h3>
+      <h3>{isLoginToggle === false ? "로그인" : "회원가입"}</h3>
       {isLoginToggle === true ? (
         <Signup setIsLoginToggle={setIsLoginToggle} />
       ) : (
