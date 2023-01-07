@@ -2,5 +2,46 @@
   margin: 0 auto;
   width: 390px;
   height: 500px;
-  background-color: aquamarine;
+  text-align: center;
+
+  .title {
+    width: 360px;
+    height: 30px;
+    margin-top: 20px;
+    border: 0px;
+    border-bottom: 1px solid rgb(190, 189, 189);
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    outline-style: none;
+  }
+
+  .text-area-contents {
+    width: 360px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    outline-style: none;
+    resize: none;
+  }
+
+  .post-add {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .post-btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: rgb(31, 31, 31);
+      color: #eeeeee;
+      border: none;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  
 }

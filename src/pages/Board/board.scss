@@ -16,6 +16,7 @@
     .add {
       font-size: 16px;
       font-weight: 700;
+      cursor: pointer;
     }
   }
 
@@ -28,11 +29,11 @@
     height: 80px;
     border-top: 1px solid rgb(213, 213, 213);
     cursor: pointer;
-
+  
     .list-title {
       font-weight: 700;
     }
-
+  
     .list-date {
       font-size: 13px;
       color: gray;

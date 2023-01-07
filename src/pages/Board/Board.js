@@ -2,8 +2,9 @@ import React from "react";
 import "./board.scss";
 import { useNavigate } from "react-router-dom";
 
-const Board = () => {
+const Board = ({ boardData }) => {
   const goToPost = useNavigate();
+  const goToPostDetail = useNavigate();
   return (
     <div className="Board">
       <div className="board-title">
@@ -11,24 +12,26 @@ const Board = () => {
         <div
           className="add"
           onClick={() => {
-            goToPost("/boardpost");
+            goToPost("/post");
           }}
         >
           글쓰기
         </div>
       </div>
-      <div className="board-lists">
-        <div className="list-title">제목 불라불라 좀 길게</div>
-        <div className="list-date">2023.01.07</div>
-      </div>
-      <div className="board-lists">
-        <div className="list-title">제목 불라불라 좀 길게</div>
-        <div className="list-date">2023.01.07</div>
-      </div>
-      <div className="board-lists">
-        <div className="list-title">제목 불라불라 좀 길게</div>
-        <div className="list-date">2023.01.07</div>
-      </div>
+      {boardData?.map((list) => {
+        return (
+          <div
+            key={list?.id}
+            className="board-lists"
+            onClick={() => {
+              goToPostDetail(`/detail/${list.id}`);
+            }}
+          >
+            <div className="list-title">{list?.postTitle}</div>
+            <div className="list-date">test</div>
+          </div>
+        );
+      })}
     </div>
   );
 };

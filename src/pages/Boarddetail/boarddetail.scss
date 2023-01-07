@@ -1,0 +1,29 @@
+.Boarddetail {
+  margin: 0 auto;
+  width: 390px;
+  height: 500px;
+  
+
+  .board-title {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .board-contents {
+    margin-top: 30px;
+    font-size: 17px;
+    white-space: pre-line;
+  }
+
+  .board-delete {
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #111111;
+    color: #eeeeee;
+    text-align: center;
+  }
+}
