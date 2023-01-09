@@ -25,6 +25,7 @@ const SimpleSlider = () => {
             src="./images/profile1.jpeg"
             alt="이미지 로드 실패"
           />
+          <p className="image-title">Eco & Rich</p>
         </div>
         <div className="images">
           <img
@@ -32,6 +33,7 @@ const SimpleSlider = () => {
             src="./images/profile2.jpeg"
             alt="이미지 로드 실패"
           />
+          <p className="image-title">Coding Test</p>
         </div>
         <div className="images">
           <img
@@ -39,6 +41,7 @@ const SimpleSlider = () => {
             src="./images/profile0.jpeg"
             alt="이미지 로드 실패"
           />
+          <p className="image-title">Shin ji hoon</p>
         </div>
       </Slider>
     </div>

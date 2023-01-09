@@ -4,11 +4,10 @@ import "./main.scss";
 import { useNavigate } from "react-router-dom";
 
 const Main = ({ userObj }) => {
-  const [] = useState();
   const goToLogin = useNavigate();
   const goToBoard = useNavigate();
   const goToProfile = useNavigate();
-  console.log(userObj);
+
   return (
     <>
       <main className="Main">
@@ -50,9 +49,29 @@ const Main = ({ userObj }) => {
                 goToBoard("board");
               }}
             >
-              B
+              C
             </button>
             <p>게시판</p>
+          </div>
+        </aside>
+        <aside className="menus-two">
+          <div>
+            <a href="https://github.com/jihoon8730" target="_blank">
+              <button className="menu">G</button>
+            </a>
+            <p>깃허브</p>
+          </div>
+          <div>
+            <a href="https://rec8730.tistory.com/" target="_blank">
+              <button className="menu">B</button>
+            </a>
+            <p>블로그</p>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/0112mm_nin/" target="_blank">
+              <button className="menu">S</button>
+            </a>
+            <p>SNS</p>
           </div>
         </aside>
       </main>

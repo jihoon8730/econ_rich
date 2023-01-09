@@ -9,6 +9,7 @@ import Boardpost from "../pages/Boardpost/Boardpost";
 import { db } from "../firebase";
 import Boarddetail from "../pages/Boarddetail/Boarddetail";
 import Profile from "../pages/Profile/Profile";
+import Footer from "./Footer/Footer";
 
 const AppRouter = ({ userObj }) => {
   const [boardData, setBoardData] = useState();
@@ -21,7 +22,6 @@ const AppRouter = ({ userObj }) => {
         ...doc.data(),
       }));
       setBoardData(userBoardList);
-      console.log(userBoardList);
     });
   }, [userObj]);
 
@@ -42,6 +42,7 @@ const AppRouter = ({ userObj }) => {
         />
         <Route path="profile" element={<Profile userObj={userObj} />} />
       </Routes>
+      <Footer />
     </>
   );
 };
