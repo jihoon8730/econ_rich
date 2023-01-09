@@ -7,6 +7,7 @@ const Main = ({ userObj }) => {
   const [] = useState();
   const goToLogin = useNavigate();
   const goToBoard = useNavigate();
+  const goToProfile = useNavigate();
   console.log(userObj);
   return (
     <>
@@ -19,7 +20,7 @@ const Main = ({ userObj }) => {
             <button
               className="menu"
               onClick={() => {
-                console.log("hello");
+                goToProfile("/profile");
               }}
             >
               P

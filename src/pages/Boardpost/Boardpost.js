@@ -27,9 +27,11 @@ const Boardpost = ({ userObj }) => {
 
   const onPostSubmit = async (event) => {
     event.preventDefault();
+    const dt = new Date();
     let postData = {
       createAt: new Date(),
       createId: userObj.uid,
+      createDate: `${dt.getFullYear()}. ${dt.getMonth() + 1}. ${dt.getDate()}`,
       postTitle: postTitle,
       postContents: contentsReplaceNewline(),
     };

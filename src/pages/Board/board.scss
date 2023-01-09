@@ -1,7 +1,8 @@
 .Board {
-  margin: 20px auto;
+  margin: 0px auto;
+  padding-top: 40px;
   width: 90%;
-  width: 380px;
+  width: 350px;
   height: 600px;
 
   .board-title {
@@ -10,7 +11,7 @@
     margin-bottom: 20px;
 
     .title {
-      font-size: 18px;
+      font-size: 23px;
       font-weight: 700;
     }
 

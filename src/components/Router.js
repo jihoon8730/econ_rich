@@ -8,6 +8,7 @@ import Board from "../pages/Board/Board";
 import Boardpost from "../pages/Boardpost/Boardpost";
 import { db } from "../firebase";
 import Boarddetail from "../pages/Boarddetail/Boarddetail";
+import Profile from "../pages/Profile/Profile";
 
 const AppRouter = ({ userObj }) => {
   const [boardData, setBoardData] = useState();
@@ -30,12 +31,16 @@ const AppRouter = ({ userObj }) => {
       <Routes>
         <Route path="/" element={<Main userObj={userObj} />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/board" element={<Board boardData={boardData} />} />
+        <Route
+          path="/board"
+          element={<Board boardData={boardData} userObj={userObj} />}
+        />
         <Route path="/post" element={<Boardpost userObj={userObj} />} />
         <Route
           path="/detail/:id"
           element={<Boarddetail userObj={userObj} boardData={boardData} />}
         />
+        <Route path="profile" element={<Profile userObj={userObj} />} />
       </Routes>
     </>
   );
