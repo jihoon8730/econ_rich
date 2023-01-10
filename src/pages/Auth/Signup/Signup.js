@@ -6,15 +6,12 @@ import {
 } from "firebase/auth";
 import { authService } from "../../../firebase";
 import "./signup.scss";
-import { useNavigate } from "react-router-dom";
 
 const Signup = ({ setIsLoginToggle }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordChecked, setPasswordChecked] = useState("");
   const [createDisplayName, setCreateDisplayName] = useState("");
-
-  let goToAuth = useNavigate();
 
   const onChangeInputValue = (e) => {
     const {

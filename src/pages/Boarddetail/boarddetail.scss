@@ -18,16 +18,16 @@
   }
 
   .board-delete {
-    margin-top: 20px;
-    border: 0px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    background-color: #111111;
-    color: #eeeeee;
-    text-align: center;
-    cursor: pointer;
-  }
-
+      margin-top: 20px;
+      border: 0px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: #111111;
+      color: #eeeeee;
+      text-align: center;
+      cursor: pointer;
+    }
+  
   .title-input {
     width: 360px;
     height: 30px;
@@ -53,11 +53,14 @@
 
   .update {
     width: 100px;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
     border: 0px;
     border-radius: 5px;
     background-color: #111111;
     color: #eeeeee;
+    font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
   }
 
@@ -68,6 +71,7 @@
     border-radius: 5px;
     background-color: #111111;
     color: #eeeeee;
+    font-weight: 700;
     cursor: pointer;
   }
 }

@@ -13,13 +13,12 @@ const Boarddetail = ({ boardData, userObj }) => {
   let userId = boardData?.find((board) => {
     return board.id === id;
   });
-  console.log(userId?.id);
   const goToBoard = useNavigate();
 
   const toggleUpdate = () => setIsUpdate((prev) => !prev);
 
   const onSubmit = async (event) => {
-    const isUpdateConfirm = window.confirm("정말로 게시글을 삭제하시겠습니까?");
+    const isUpdateConfirm = window.confirm("정말로 게시글을 수정하시겠습니까?");
     const boardUser = doc(db, "econrich", `${userId?.id}`);
     event.preventDefault();
     if (isUpdateConfirm) {
@@ -92,7 +91,8 @@ const Boarddetail = ({ boardData, userObj }) => {
             <div className="board-title">{userId?.postTitle}</div>
             <div className="board-contents">{userId?.postContents}</div>
 
-            {userObj?.uid === userId?.createId ? (
+            {userObj?.uid === userId?.createId ||
+            userObj?.uid === "tBmF1Lxv8SZpebuUvNi4UnlRJBG3" ? (
               <>
                 <div className="board-delete" onClick={toggleUpdate}>
                   수정
