@@ -19,7 +19,11 @@ const Main = ({ userObj }) => {
             <button
               className="menu"
               onClick={() => {
-                goToProfile("/profile");
+                if (userObj) {
+                  goToProfile("/profile");
+                } else {
+                  alert("로그인이 필요한 서비스 입니다.");
+                }
               }}
             >
               P

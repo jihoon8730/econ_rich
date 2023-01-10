@@ -14,6 +14,7 @@
     "react-slick": "^0.29.0",
     "react-slick-carousel": "^0.14.9",
     "sass": "^1.57.1",
+    "serve": "^14.1.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.0"
   },

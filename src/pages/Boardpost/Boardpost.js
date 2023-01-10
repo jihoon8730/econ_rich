@@ -68,7 +68,7 @@ const Boardpost = ({ userObj }) => {
               value={postTitle}
               type="text"
               placeholder="제목"
-              maxLength={15}
+              maxLength={20}
               onChange={onPostChange}
             />
             <textarea
@@ -77,7 +77,7 @@ const Boardpost = ({ userObj }) => {
               value={postContents}
               type="text"
               placeholder="본문을 입력해 주세요."
-              maxLength={150}
+              maxLength={300}
               onChange={onPostChange}
             />
 

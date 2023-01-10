@@ -21,9 +21,9 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="wrap">
       <AppRouter userObj={userObj} isLoggedIn={isLoggedIn} />
-    </>
+    </div>
   );
 }
 
